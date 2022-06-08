@@ -1,7 +1,7 @@
 import React from 'react'
-import Slider from './slider/slider';
-import Categories from './category';
-import Products from './products/products';
+import Slider from '../slider/slider';
+import Categories from '../category/category';
+import Products from '../products/products';
 
 const content = () => {
   return (

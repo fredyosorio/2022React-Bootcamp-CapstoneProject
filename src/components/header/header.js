@@ -1,6 +1,7 @@
 import React from 'react'
-import logo from '../../src/logo.svg';
-import cart from '../../src/cart.svg';
+import logo from './logo.svg';
+import cart from './cart.svg';
+import './header.scss';
 
 const header = () => {
   return (

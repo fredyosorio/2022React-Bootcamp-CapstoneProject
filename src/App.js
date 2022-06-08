@@ -1,11 +1,11 @@
-import './App.css';
+import './App.scss';
 import React from "react";
-import Main from "./pages/Main";
+import Home from "./pages/Home";
 
 function App() {
 
   return (
-    <Main />
+    <Home />
   );
 }
 

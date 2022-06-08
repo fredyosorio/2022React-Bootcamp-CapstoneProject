@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import Header from '../components/header';
+import Header from '../components/header/header';
 
 describe('Logo', () => {
   test('Logo must have src = "logo.svg" and alt = "logo"', () => {

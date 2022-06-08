@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import './slider.css'
+import './slider.scss'
 import BtnSlider from './BtnSlider'
 import dataSlider from '../../mocks/featured-banners.json';
 
