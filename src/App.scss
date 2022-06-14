@@ -45,19 +45,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 90px 20px 20px
-}
-
-@media(max-width: 1000px) {
-  section {
-    padding: 100px 20px 15px;
-  }
-}
-
-@media(max-width: 600px) {
-  section {
-    padding: 130px 20px 20px;
-  }
+  padding: 20px;
 }
 
 ul.grid {
@@ -96,8 +84,20 @@ ul.grid {
 
 .title-content > h1 {
   font-size: 45px;
+  padding: 10px;
 }
 
 .title-content > h3 {
   font-size: 25px;
+}
+
+.btn-primary {
+  background-color: #232323;
+  color: white;
+  padding: 13px;
+  cursor: pointer;
+}
+
+.mt-3 {
+  margin-top: 30px
 }

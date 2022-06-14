@@ -1,5 +1,5 @@
 import React from 'react';
-import './card.scss';
+import './products.scss';
 import truncate from '../../utils/truncate';
 
 const card = ({item}) => {

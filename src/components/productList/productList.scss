@@ -1,0 +1,78 @@
+.btn-icon {
+  display: flex !important;
+  align-items: center !important;
+  padding: 5px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 220px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  font-size: 35px;
+  margin-left: 50px;
+}
+
+.sidenav span {
+  color: white;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  padding: 10px 10px;
+  margin-bottom: 20px;
+}
+
+.sidenav label {
+  padding: 10px;
+  color: white;
+}
+
+.sidenav .form-checkbox {
+  display: block;
+  min-height: 1.5rem;
+  margin-bottom: 1rem;
+  padding: 0 10px;
+}
+
+.sidenav input {
+  margin-left: 5px;
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 20px;
+}
+
+@media screen and(max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
