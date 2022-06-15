@@ -12,7 +12,7 @@ const landing = ({goToPage}) => {
       </section>
       <Slider />
       <Categories />
-      <Products title={'Featured Products'}/>
+      <Products title={'Featured Products'} isLoadingState={false}/>
       <div className="view-all">
         <button onClick={() => {goToPage('productList')}} className="btn-primary">
           View all products

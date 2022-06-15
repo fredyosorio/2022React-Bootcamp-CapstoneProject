@@ -33,7 +33,6 @@ const Products = ({title, categories, isLoadingState, setIsLoadingState}) => {
     }, 2000)
   
   }, [categories]);
-  
 
   function renderTitle(title) {
     return (
