@@ -1,6 +1,6 @@
 import React from 'react';
 import Slider from '../slider/slider';
-import Categories from '../category/category';
+import { CategoryCard } from '../category/category';
 import Products from '../products/Products';
 
 const landing = ({goToPage}) => {
@@ -11,7 +11,7 @@ const landing = ({goToPage}) => {
         <h3>Discover what's new.</h3>
       </section>
       <Slider />
-      <Categories />
+      <CategoryCard />
       <Products title={'Featured Products'} isLoadingState={false}/>
       <div className="view-all">
         <button onClick={() => {goToPage('productList')}} className="btn-primary">

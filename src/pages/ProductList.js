@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Products from '../components/products/Products';
+import { CategoryList } from '../components/category/category';
 import filter from '../components/productList/filter.svg';
 import '../components/productList/productList.scss';
 import categories from '../mocks/product-categories.json';
@@ -29,17 +30,6 @@ const ProductList = () => {
   const closeNav = () => {
     setrenderNav(false)
   };
-
-  const handleCheck = (e, categoryName) => {
-    const isSelected = e.target.checked;
-
-    setCategoriesState(
-      {
-        ...categoriesState,
-        [categoryName]: isSelected,
-      }
-    )
-  };
   
   return (
     <>
@@ -51,22 +41,12 @@ const ProductList = () => {
           </button>
       </section>
       <div className="sidenav" style={{ "display": renderNav ? "" : "none"  }}>
-          <span className="closebtn" onClick={() => closeNav()}>&times;</span>
-          <span>Categories</span>
-          { results.map(({id, data:{name}}, index) => {
-            return (
-              <div className="form-checkbox" key={id}>
-                <input
-                  type="checkbox"
-                  id={id}
-                  value={name}
-                  onChange={(e) => {handleCheck(e, e.target.value)}}
-                />
-                <label htmlFor={id}>{name}</label>
-              </div>
-            );
-          })}
-        </div>
+        <span className="closebtn" onClick={() => closeNav()}>&times;</span>
+        <CategoryList 
+          setCategoriesState={setCategoriesState}
+          categories={categoriesState}
+        />
+      </div>
       <Products
         categories={categoriesState}
         isLoadingState={isLoadingState}

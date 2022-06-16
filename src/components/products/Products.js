@@ -32,19 +32,15 @@ const Products = ({title, categories, isLoadingState, setIsLoadingState}) => {
       setIsLoadingState(false);
     }, 2000)
   
-  }, [categories]);
-
-  function renderTitle(title) {
-    return (
-      <div className="title-content">
-        <h1>{title}</h1>
-      </div>
-    );
-  };
+  }, [categories, setIsLoadingState]);
 
   return (
     <>
-      { title ? renderTitle(title) : '' }
+      { title && 
+        <div className="title-content">
+          <h1>{title}</h1>
+        </div>
+      }
       <div className="section-wrapper container">
 
         {isLoadingState ? 'Loading' : productsState.map( product => {
