@@ -3,10 +3,12 @@ import logo from './logo.svg';
 import cart from './cart.svg';
 import './header.scss';
 
-const header = () => {
+const header = ({goToPage}) => {
   return (
     <header>
-      <img src={logo} className="logo" alt="logo"/>
+      <a href="/#" onClick={() => {goToPage('home')}}>
+        <img src={logo} className="logo" alt="logo"/>
+      </a>
       <nav>
         <li>
           <form>
